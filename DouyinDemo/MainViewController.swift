@@ -144,7 +144,7 @@ class MainViewController:
         self.collectionView!.mj_header.endRefreshing()
         self.collectionView!.reloadData()
         if #available(iOS 10.0, *) {
-            FeedbackGenerator.tapped(type: 4)
+            Tools.tapped(type: 4)
         }
     }
 }
