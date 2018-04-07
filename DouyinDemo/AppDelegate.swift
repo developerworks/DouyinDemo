@@ -13,7 +13,7 @@ import ZLaunchAd
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var backgroundTask:UIBackgroundTaskIdentifier! = nil
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -34,7 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    // 临时中断处理
     func applicationWillResignActive(_ application: UIApplication) {
+        print(">>> 临时中断处理...")
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     }
@@ -42,18 +44,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        print(">>> 应用程序已进入后台...")
+        if self.backgroundTask != nil {
+            application.endBackgroundTask(self.backgroundTask)
+            self.backgroundTask = UIBackgroundTaskInvalid
+        }
+        //注册后台任务
+        self.backgroundTask = application.beginBackgroundTask(expirationHandler: {
+            () -> Void in
+            //如果没有调用endBackgroundTask，时间耗尽时应用程序将被终止
+            application.endBackgroundTask(self.backgroundTask)
+            self.backgroundTask = UIBackgroundTaskInvalid
+        })
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        print(">>> 应用程序将要进入前台...")
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        print(">>> 应用程序已经变为活动装...")
     }
 
+    // 这个方法让你的应用知道它马上要被干掉了并且将从内存完全清除掉。
+    // 你应该使用这个方法来执行任何你的应用最后的清理工作，比如释放共享资源，保存用户数据，使timers失效，
+    // 实现这个方法你大约有5秒钟的时间来执行你的任务并且返回，
+    // 如果这个方法在时间失效前没有返回，那么系统可能会一并杀死这个进程。
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        print(">>> 应用程序即将终止...")
+        print(">>> 释放共享资源...")
+        print(">>> 保护用户数据...")
+        print(">>> 删除计时器...")
     }
 
 

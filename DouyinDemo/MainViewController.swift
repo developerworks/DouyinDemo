@@ -23,8 +23,23 @@ class MainViewController:
     var covers: [String] = []
     var dynamic_covers: [String] = []
     
+    var i = 0
+    
+    @objc func tickDown() {
+        i = i + 1
+        print("tickDown: \(i) ")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        _ = Timer.scheduledTimer(
+            timeInterval: 1,
+            target:self,
+            selector: #selector(MainViewController.tickDown),
+            userInfo:nil,
+            repeats:true
+        )
         
         header.setRefreshingTarget(self, refreshingAction: #selector(MainViewController.headerRefresh))
 
