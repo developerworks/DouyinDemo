@@ -71,13 +71,13 @@
 		0F1A44D4207879FD0096DB0A /* DouyinDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0F1A44D5207879FD0096DB0A /* AppDelegate.swift */,
 				0F1A44F120787B3F0096DB0A /* FeedbackGenerator.swift */,
 				0F1A44E820787B0A0096DB0A /* AdModel.swift */,
 				0F1A44EB20787B0A0096DB0A /* ImageCell.swift */,
 				0F1A44E720787B0A0096DB0A /* Setting.swift */,
 				0F1A44E920787B0A0096DB0A /* Tools.swift */,
 				0F1A44EA20787B0A0096DB0A /* Video.swift */,
-				0F1A44D5207879FD0096DB0A /* AppDelegate.swift */,
 				0F1A44DC207879FD0096DB0A /* Assets.xcassets */,
 				0F1A44DE207879FD0096DB0A /* LaunchScreen.storyboard */,
 				0F1A44E1207879FD0096DB0A /* Info.plist */,
