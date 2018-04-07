@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import SwiftyBeaver
 
 class Tools: NSObject {
     static func requestUserNotification() {
@@ -16,5 +17,13 @@ class Tools: NSObject {
                 print("用户不允许消息通知!")
             }
         }
+    }
+    
+    static func configLogger() {
+        let file = FileDestination()
+        file.minLevel = .verbose
+        file.logFileURL = URL(fileURLWithPath: "/tmp/swiftybeaver.log")
+        file.asynchronously = false
+        SwiftyBeaver.addDestination(file)
     }
 }

@@ -12,5 +12,6 @@ target 'DouyinDemo' do
   pod 'SDWebImage/WebP'
   pod 'Alamofire'
   pod 'ZLaunchAd'
+  pod 'SwiftyBeaver'
 
 end

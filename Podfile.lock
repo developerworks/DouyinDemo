@@ -33,6 +33,7 @@ PODS:
     - libwebp (~> 0.5)
     - SDWebImage/Core
   - SwiftHash (2.0.1)
+  - SwiftyBeaver (1.5.2)
   - ZLaunchAd (2.0.0):
     - SwiftHash (~> 2.0.1)
 
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - ObjectMapper
   - SDWebImage
   - SDWebImage/WebP
+  - SwiftyBeaver
   - ZLaunchAd
 
 SPEC CHECKSUMS:
@@ -51,8 +53,9 @@ SPEC CHECKSUMS:
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SwiftHash: c805de5a434eacfa0dac7210745a50c55d7fe33d
+  SwiftyBeaver: 85daaaa2b3ae6e31b7b55c99430e8b91dac088af
   ZLaunchAd: 877d9f43b6f389e2ed192ed10fe92767c0f18124
 
-PODFILE CHECKSUM: 5be01ef7f1a43ffb7ec5841adb5c9f4f929ddd81
+PODFILE CHECKSUM: edd62e20f9b9a20e8bfa0a66b27df71a9026c824
 
 COCOAPODS: 1.4.0.beta.2

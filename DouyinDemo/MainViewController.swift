@@ -9,6 +9,7 @@
 import UIKit
 import MJRefresh
 import Alamofire
+import SwiftyBeaver
 
 class MainViewController:
     UIViewController,
@@ -28,6 +29,7 @@ class MainViewController:
     @objc func tickDown() {
         i = i + 1
         print("tickDown: \(i) ")
+        SwiftyBeaver.info("tickDown: \(i)")
     }
     
     override func viewDidLoad() {
