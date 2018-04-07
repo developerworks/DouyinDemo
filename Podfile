@@ -13,5 +13,5 @@ target 'DouyinDemo' do
   pod 'Alamofire'
   pod 'ZLaunchAd'
   pod 'SwiftyBeaver'
-
+  pod 'DeviceKit'
 end

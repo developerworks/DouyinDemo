@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.1)
+  - DeviceKit (1.6.0)
   - libwebp (0.6.1):
     - libwebp/core (= 0.6.1)
     - libwebp/dec (= 0.6.1)
@@ -39,6 +40,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - DeviceKit
   - MJRefresh
   - ObjectMapper
   - SDWebImage
@@ -48,6 +50,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  DeviceKit: 3de509f9db7ae93bf676da5e97b945517bc957cd
   libwebp: 0f01098c6c17175391af621b2f14150f3ca16e16
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
@@ -56,6 +59,6 @@ SPEC CHECKSUMS:
   SwiftyBeaver: 85daaaa2b3ae6e31b7b55c99430e8b91dac088af
   ZLaunchAd: 877d9f43b6f389e2ed192ed10fe92767c0f18124
 
-PODFILE CHECKSUM: edd62e20f9b9a20e8bfa0a66b27df71a9026c824
+PODFILE CHECKSUM: 8a764e68ee1859da79077aa73229bf06c44c26a2
 
 COCOAPODS: 1.4.0.beta.2

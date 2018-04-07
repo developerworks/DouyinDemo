@@ -9,6 +9,7 @@
 import UIKit
 import UserNotifications
 import SwiftyBeaver
+import DeviceKit
 
 class Tools: NSObject {
     static func requestUserNotification() {
@@ -20,10 +21,13 @@ class Tools: NSObject {
     }
     
     static func configLogger() {
-        let file = FileDestination()
-        file.minLevel = .verbose
-        file.logFileURL = URL(fileURLWithPath: "/tmp/swiftybeaver.log")
-        file.asynchronously = false
-        SwiftyBeaver.addDestination(file)
+        let device = Device()
+        if device.isSimulator {
+            let file = FileDestination()
+            file.minLevel = .verbose
+            file.logFileURL = URL(fileURLWithPath: "/tmp/swiftybeaver.log")
+            file.asynchronously = false
+            SwiftyBeaver.addDestination(file)
+        }
     }
 }

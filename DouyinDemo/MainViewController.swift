@@ -35,13 +35,13 @@ class MainViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        _ = Timer.scheduledTimer(
-            timeInterval: 1,
-            target:self,
-            selector: #selector(MainViewController.tickDown),
-            userInfo:nil,
-            repeats:true
-        )
+//        _ = Timer.scheduledTimer(
+//            timeInterval: 1,
+//            target:self,
+//            selector: #selector(MainViewController.tickDown),
+//            userInfo:nil,
+//            repeats:true
+//        )
         
         header.setRefreshingTarget(self, refreshingAction: #selector(MainViewController.headerRefresh))
 
@@ -113,7 +113,10 @@ class MainViewController:
                 let video_info = VideoInfo(JSONString: utf8Text)
                 for (_,item) in (video_info?.aweme_list?.enumerated())! {
                     self.covers.append(item.video.cover.first!)
-                    self.dynamic_covers.append(item.video.dynamic_cover.first!)
+                    let randomIndex = Int(arc4random_uniform(UInt32(item.video.dynamic_cover.count)))
+                    let dynamicCoverUrl = item.video.dynamic_cover[randomIndex]
+                    self.dynamic_covers.append(dynamicCoverUrl)
+                    print("dynamic cover url: \(dynamicCoverUrl)")
                 }
                 self.collectionView?.reloadData()
             }
@@ -138,7 +141,7 @@ class MainViewController:
     //顶部下拉刷新
     @objc func headerRefresh(){
         print("下拉刷新.")
-        sleep(1)
+        loadData()
         self.collectionView!.mj_header.endRefreshing()
         self.collectionView!.reloadData()
         if #available(iOS 10.0, *) {
@@ -152,6 +155,7 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (UIScreen.main.bounds.size.width - 1) / 2
         let height = ( width / 270 ) * 480
+//        print("dynamic cover size: width: \(width) height=\(height)")
         return CGSize(width: width, height: height)
     }
 }
