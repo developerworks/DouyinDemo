@@ -64,4 +64,9 @@ class Tools: NSObject {
             generator.selectionChanged()
         }
     }
+    
+    // Bundle ID
+    static func bundleId() -> String {
+        return Bundle.main.bundleIdentifier!
+    }
 }

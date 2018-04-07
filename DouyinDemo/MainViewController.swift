@@ -111,6 +111,11 @@ class MainViewController:
         ).responseJSON { response in
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                 let video_info = VideoInfo(JSONString: utf8Text)
+                
+                let keyPath: KeyPath = \VideoInfo.aweme_list.first?.video?.dynamic_cover
+                let covers = video_info[keyPath: keyPath]
+                print("Access values by key path: \(String(describing: covers))")
+                
                 for (_,item) in (video_info?.aweme_list?.enumerated())! {
                     self.covers.append(item.video.cover.first!)
                     let dynamicCoverUrl = item.video.dynamic_cover.randomItem()
