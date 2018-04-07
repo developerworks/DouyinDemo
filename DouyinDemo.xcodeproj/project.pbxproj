@@ -17,8 +17,8 @@
 		0F1A44F020787B0A0096DB0A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44EB20787B0A0096DB0A /* ImageCell.swift */; };
 		0F1A44F220787B400096DB0A /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44F120787B3F0096DB0A /* FeedbackGenerator.swift */; };
 		0F1A44F420787B7F0096DB0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44F320787B7F0096DB0A /* MainViewController.swift */; };
-		0FEDED442078AE9D0051DB91 /* ASLEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDED432078AE9D0051DB91 /* ASLEye.swift */; };
 		0FEDED72207914510051DB91 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDED71207914510051DB91 /* Keychain.swift */; };
+		0FEDED7520791C660051DB91 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDED7420791C660051DB91 /* Array.swift */; };
 		B91C9AC3D1764931FA53B806 /* Pods_DouyinDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BB5F0359584A83D2C3076A /* Pods_DouyinDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +36,8 @@
 		0F1A44EB20787B0A0096DB0A /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		0F1A44F120787B3F0096DB0A /* FeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
 		0F1A44F320787B7F0096DB0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		0FEDED432078AE9D0051DB91 /* ASLEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLEye.swift; sourceTree = "<group>"; };
 		0FEDED71207914510051DB91 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		0FEDED7420791C660051DB91 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		7DCF4384B97038976B441B44 /* Pods-DouyinDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyinDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouyinDemo/Pods-DouyinDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AD70CCA21AC5AFF196D117B4 /* Pods-DouyinDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyinDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouyinDemo/Pods-DouyinDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +75,7 @@
 		0F1A44D4207879FD0096DB0A /* DouyinDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0FEDED7320791C5A0051DB91 /* extensions */,
 				0F1A44D5207879FD0096DB0A /* AppDelegate.swift */,
 				0F1A44F320787B7F0096DB0A /* MainViewController.swift */,
 				0F1A44F120787B3F0096DB0A /* FeedbackGenerator.swift */,
@@ -86,10 +87,17 @@
 				0F1A44DC207879FD0096DB0A /* Assets.xcassets */,
 				0F1A44DE207879FD0096DB0A /* LaunchScreen.storyboard */,
 				0F1A44E1207879FD0096DB0A /* Info.plist */,
-				0FEDED432078AE9D0051DB91 /* ASLEye.swift */,
 				0FEDED71207914510051DB91 /* Keychain.swift */,
 			);
 			path = DouyinDemo;
+			sourceTree = "<group>";
+		};
+		0FEDED7320791C5A0051DB91 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FEDED7420791C660051DB91 /* Array.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		334AE655B84BB709383F2E2B /* Pods */ = {
@@ -254,10 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F1A44EF20787B0A0096DB0A /* Video.swift in Sources */,
+				0FEDED7520791C660051DB91 /* Array.swift in Sources */,
 				0F1A44D6207879FD0096DB0A /* AppDelegate.swift in Sources */,
 				0FEDED72207914510051DB91 /* Keychain.swift in Sources */,
 				0F1A44ED20787B0A0096DB0A /* AdModel.swift in Sources */,
-				0FEDED442078AE9D0051DB91 /* ASLEye.swift in Sources */,
 				0F1A44EC20787B0A0096DB0A /* Setting.swift in Sources */,
 				0F1A44F020787B0A0096DB0A /* ImageCell.swift in Sources */,
 				0F1A44F220787B400096DB0A /* FeedbackGenerator.swift in Sources */,

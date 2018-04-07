@@ -113,8 +113,7 @@ class MainViewController:
                 let video_info = VideoInfo(JSONString: utf8Text)
                 for (_,item) in (video_info?.aweme_list?.enumerated())! {
                     self.covers.append(item.video.cover.first!)
-                    let randomIndex = Int(arc4random_uniform(UInt32(item.video.dynamic_cover.count)))
-                    let dynamicCoverUrl = item.video.dynamic_cover[randomIndex]
+                    let dynamicCoverUrl = item.video.dynamic_cover.randomItem()
                     self.dynamic_covers.append(dynamicCoverUrl)
                     print("dynamic cover url: \(dynamicCoverUrl)")
                 }
