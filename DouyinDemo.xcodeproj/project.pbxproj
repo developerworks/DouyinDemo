@@ -73,18 +73,16 @@
 		0F1A44D4207879FD0096DB0A /* DouyinDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0FEDED792079237C0051DB91 /* configs */,
+				0FEDED78207923590051DB91 /* components */,
+				0FEDED772079234F0051DB91 /* models */,
+				0FEDED76207923240051DB91 /* utilities */,
 				0FEDED7320791C5A0051DB91 /* extensions */,
 				0F1A44D5207879FD0096DB0A /* AppDelegate.swift */,
 				0F1A44F320787B7F0096DB0A /* MainViewController.swift */,
-				0F1A44E820787B0A0096DB0A /* AdModel.swift */,
-				0F1A44EB20787B0A0096DB0A /* ImageCell.swift */,
-				0F1A44E720787B0A0096DB0A /* Setting.swift */,
-				0F1A44E920787B0A0096DB0A /* Tools.swift */,
-				0F1A44EA20787B0A0096DB0A /* Video.swift */,
 				0F1A44DC207879FD0096DB0A /* Assets.xcassets */,
 				0F1A44DE207879FD0096DB0A /* LaunchScreen.storyboard */,
 				0F1A44E1207879FD0096DB0A /* Info.plist */,
-				0FEDED71207914510051DB91 /* Keychain.swift */,
 			);
 			path = DouyinDemo;
 			sourceTree = "<group>";
@@ -95,6 +93,40 @@
 				0FEDED7420791C660051DB91 /* Array.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		0FEDED76207923240051DB91 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0F1A44E920787B0A0096DB0A /* Tools.swift */,
+				0FEDED71207914510051DB91 /* Keychain.swift */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		0FEDED772079234F0051DB91 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0F1A44E820787B0A0096DB0A /* AdModel.swift */,
+				0F1A44EA20787B0A0096DB0A /* Video.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		0FEDED78207923590051DB91 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				0F1A44EB20787B0A0096DB0A /* ImageCell.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		0FEDED792079237C0051DB91 /* configs */ = {
+			isa = PBXGroup;
+			children = (
+				0F1A44E720787B0A0096DB0A /* Setting.swift */,
+			);
+			path = configs;
 			sourceTree = "<group>";
 		};
 		334AE655B84BB709383F2E2B /* Pods */ = {

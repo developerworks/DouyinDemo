@@ -12,6 +12,11 @@ import SwiftyBeaver
 import DeviceKit
 
 class Tools: NSObject {
+    // 禁止实例化
+    private override init(){
+    }
+    
+    // 用户通知权限请求
     static func requestUserNotification() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (accepted, error) in
             if !accepted {
@@ -20,6 +25,7 @@ class Tools: NSObject {
         }
     }
     
+    // 开发调试日志
     static func configLogger() {
         let device = Device()
         if device.isSimulator {
@@ -31,6 +37,7 @@ class Tools: NSObject {
         }
     }
     
+    // 震动反馈
     @available(iOS 10.0, *)
     static func tapped(type: Int) {
         switch type {
