@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0F1A44D6207879FD0096DB0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44D5207879FD0096DB0A /* AppDelegate.swift */; };
-		0F1A44D8207879FD0096DB0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44D7207879FD0096DB0A /* ViewController.swift */; };
-		0F1A44DB207879FD0096DB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1A44D9207879FD0096DB0A /* Main.storyboard */; };
 		0F1A44DD207879FD0096DB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1A44DC207879FD0096DB0A /* Assets.xcassets */; };
 		0F1A44E0207879FD0096DB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1A44DE207879FD0096DB0A /* LaunchScreen.storyboard */; };
+		0F1A44EC20787B0A0096DB0A /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44E720787B0A0096DB0A /* Setting.swift */; };
+		0F1A44ED20787B0A0096DB0A /* AdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44E820787B0A0096DB0A /* AdModel.swift */; };
+		0F1A44EE20787B0A0096DB0A /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44E920787B0A0096DB0A /* Tools.swift */; };
+		0F1A44EF20787B0A0096DB0A /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44EA20787B0A0096DB0A /* Video.swift */; };
+		0F1A44F020787B0A0096DB0A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44EB20787B0A0096DB0A /* ImageCell.swift */; };
+		0F1A44F220787B400096DB0A /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44F120787B3F0096DB0A /* FeedbackGenerator.swift */; };
+		0F1A44F420787B7F0096DB0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A44F320787B7F0096DB0A /* MainViewController.swift */; };
 		B91C9AC3D1764931FA53B806 /* Pods_DouyinDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BB5F0359584A83D2C3076A /* Pods_DouyinDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +24,16 @@
 		05BB5F0359584A83D2C3076A /* Pods_DouyinDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouyinDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1A44D2207879FD0096DB0A /* DouyinDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouyinDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1A44D5207879FD0096DB0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0F1A44D7207879FD0096DB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F1A44DA207879FD0096DB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F1A44DC207879FD0096DB0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F1A44DF207879FD0096DB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F1A44E1207879FD0096DB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F1A44E720787B0A0096DB0A /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		0F1A44E820787B0A0096DB0A /* AdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdModel.swift; sourceTree = "<group>"; };
+		0F1A44E920787B0A0096DB0A /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		0F1A44EA20787B0A0096DB0A /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		0F1A44EB20787B0A0096DB0A /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		0F1A44F120787B3F0096DB0A /* FeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
+		0F1A44F320787B7F0096DB0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7DCF4384B97038976B441B44 /* Pods-DouyinDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyinDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouyinDemo/Pods-DouyinDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AD70CCA21AC5AFF196D117B4 /* Pods-DouyinDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyinDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouyinDemo/Pods-DouyinDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,12 +71,17 @@
 		0F1A44D4207879FD0096DB0A /* DouyinDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0F1A44F120787B3F0096DB0A /* FeedbackGenerator.swift */,
+				0F1A44E820787B0A0096DB0A /* AdModel.swift */,
+				0F1A44EB20787B0A0096DB0A /* ImageCell.swift */,
+				0F1A44E720787B0A0096DB0A /* Setting.swift */,
+				0F1A44E920787B0A0096DB0A /* Tools.swift */,
+				0F1A44EA20787B0A0096DB0A /* Video.swift */,
 				0F1A44D5207879FD0096DB0A /* AppDelegate.swift */,
-				0F1A44D7207879FD0096DB0A /* ViewController.swift */,
-				0F1A44D9207879FD0096DB0A /* Main.storyboard */,
 				0F1A44DC207879FD0096DB0A /* Assets.xcassets */,
 				0F1A44DE207879FD0096DB0A /* LaunchScreen.storyboard */,
 				0F1A44E1207879FD0096DB0A /* Info.plist */,
+				0F1A44F320787B7F0096DB0A /* MainViewController.swift */,
 			);
 			path = DouyinDemo;
 			sourceTree = "<group>";
@@ -152,7 +167,6 @@
 			files = (
 				0F1A44E0207879FD0096DB0A /* LaunchScreen.storyboard in Resources */,
 				0F1A44DD207879FD0096DB0A /* Assets.xcassets in Resources */,
-				0F1A44DB207879FD0096DB0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,22 +243,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F1A44D8207879FD0096DB0A /* ViewController.swift in Sources */,
+				0F1A44EF20787B0A0096DB0A /* Video.swift in Sources */,
 				0F1A44D6207879FD0096DB0A /* AppDelegate.swift in Sources */,
+				0F1A44ED20787B0A0096DB0A /* AdModel.swift in Sources */,
+				0F1A44EC20787B0A0096DB0A /* Setting.swift in Sources */,
+				0F1A44F020787B0A0096DB0A /* ImageCell.swift in Sources */,
+				0F1A44F220787B400096DB0A /* FeedbackGenerator.swift in Sources */,
+				0F1A44EE20787B0A0096DB0A /* Tools.swift in Sources */,
+				0F1A44F420787B7F0096DB0A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0F1A44D9207879FD0096DB0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F1A44DA207879FD0096DB0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F1A44DE207879FD0096DB0A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -372,7 +384,7 @@
 				DEVELOPMENT_TEAM = 7B5S5W35G3;
 				INFOPLIST_FILE = DouyinDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.totorotec.DouYinTimeEffect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.totorotec.ALPlayerVodSDK.AliyunPlayerMediaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,7 +400,7 @@
 				DEVELOPMENT_TEAM = 7B5S5W35G3;
 				INFOPLIST_FILE = DouyinDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.totorotec.DouYinTimeEffect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.totorotec.ALPlayerVodSDK.AliyunPlayerMediaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
