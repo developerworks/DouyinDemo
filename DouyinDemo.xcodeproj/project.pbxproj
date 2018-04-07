@@ -12,9 +12,11 @@
 		0F1A44DB207879FD0096DB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1A44D9207879FD0096DB0A /* Main.storyboard */; };
 		0F1A44DD207879FD0096DB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1A44DC207879FD0096DB0A /* Assets.xcassets */; };
 		0F1A44E0207879FD0096DB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1A44DE207879FD0096DB0A /* LaunchScreen.storyboard */; };
+		B91C9AC3D1764931FA53B806 /* Pods_DouyinDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BB5F0359584A83D2C3076A /* Pods_DouyinDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05BB5F0359584A83D2C3076A /* Pods_DouyinDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouyinDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1A44D2207879FD0096DB0A /* DouyinDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouyinDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1A44D5207879FD0096DB0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F1A44D7207879FD0096DB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		0F1A44DC207879FD0096DB0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F1A44DF207879FD0096DB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F1A44E1207879FD0096DB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DCF4384B97038976B441B44 /* Pods-DouyinDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyinDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouyinDemo/Pods-DouyinDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AD70CCA21AC5AFF196D117B4 /* Pods-DouyinDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyinDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouyinDemo/Pods-DouyinDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91C9AC3D1764931FA53B806 /* Pods_DouyinDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0F1A44D4207879FD0096DB0A /* DouyinDemo */,
 				0F1A44D3207879FD0096DB0A /* Products */,
+				334AE655B84BB709383F2E2B /* Pods */,
+				9B6ABE7DA5576FC5865AD8A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = DouyinDemo;
 			sourceTree = "<group>";
 		};
+		334AE655B84BB709383F2E2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF4384B97038976B441B44 /* Pods-DouyinDemo.debug.xcconfig */,
+				AD70CCA21AC5AFF196D117B4 /* Pods-DouyinDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B6ABE7DA5576FC5865AD8A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05BB5F0359584A83D2C3076A /* Pods_DouyinDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F1A44E4207879FD0096DB0A /* Build configuration list for PBXNativeTarget "DouyinDemo" */;
 			buildPhases = (
+				74E4DA1EE64F7CC1E6689337 /* [CP] Check Pods Manifest.lock */,
 				0F1A44CE207879FD0096DB0A /* Sources */,
 				0F1A44CF207879FD0096DB0A /* Frameworks */,
 				0F1A44D0207879FD0096DB0A /* Resources */,
+				A1D44E1F6054B0AD789DCBD3 /* [CP] Embed Pods Frameworks */,
+				9BC124D8F46E6F709BA1BA63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,72 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74E4DA1EE64F7CC1E6689337 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouyinDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BC124D8F46E6F709BA1BA63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouyinDemo/Pods-DouyinDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D44E1F6054B0AD789DCBD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DouyinDemo/Pods-DouyinDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
+				"${BUILT_PRODUCTS_DIR}/ZLaunchAd/ZLaunchAd.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZLaunchAd.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouyinDemo/Pods-DouyinDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F1A44CE207879FD0096DB0A /* Sources */ = {
@@ -272,6 +365,7 @@
 		};
 		0F1A44E5207879FD0096DB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DCF4384B97038976B441B44 /* Pods-DouyinDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +381,7 @@
 		};
 		0F1A44E6207879FD0096DB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD70CCA21AC5AFF196D117B4 /* Pods-DouyinDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
